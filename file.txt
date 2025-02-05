@@ -1,6 +1,99 @@
-Hello, Git
-line two in git
-line 3 in git 
-line 4 in git
-line 5 in git branch 
+html page{
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="./page.css" />
+  </head>
+  <body>
+    <div class="page">
+       <h2>foot ball</h2>
+       <nav>
+        <ul>
+            <li>messi</li>
+            <li>CR7</li>
+            <li>Namer jr</li>
+            <li></li>
+        </ul>
+       </nav>
+       <section>
+        <div>
+        Football is one of the most popularly played games around the world. It is the most interesting and engaging as well as one of the oldest games in the world.
+     This game requires a lot of enthusiasm and excitement, which is seen during
+      tournaments and world cups in both players and spectators.
+       It is a game of eleven players in a team 
+       where two teams play against each other.
+        The game is named football because it is played by using their feet to pass the ball,
+         and the use of hands is considered a foul.</div>
+         <span> messi is Best , he is the goat</span>
+       </section>
+       <aside> photo to messi , cr and nemar</aside>
+       <footer>any thing</footer>
 
+    </div>
+  </body>
+</html>
+}
+
+css{
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]
+  - justify-content
+  - align-content
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    display: inline-block;
+  }
+  .page {
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas:
+     "logo logo nav nav nav nav nav nav nav nav"
+     " cont cont cont cont cont cont cont side side side "
+     "  foot foot foot foot foot foot foot foot foot foot";
+  }
+  h2 {
+    grid-area: logo;
+    background-color: rgb(220, 107, 107);
+    color: white;
+  }
+  nav {
+    grid-area: nav;
+    background-color: rgb(108, 108, 227);
+    color: white;
+  }
+  section {
+    grid-area: cont;
+    background-color: yellow;
+    color: rgb(255, 0, 0);
+  }
+  aside {
+    grid-area: side;
+    background-color: rgb(121, 255, 121);
+    color: white;
+  }
+  footer {
+    grid-area: foot;
+    background-color: black;
+    color: white;
+  }
+
+}
