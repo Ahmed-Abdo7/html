@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>input</title>
+   
+</head>
+
+<body>
+    <h1>from</h1>
+    <div>
+        <p>facebook</p>
+    </div>
+    <!--action = تكتب اسم الملف اللي هتبعت عليه البيانات back end-->
+    <form action="" method="post">
+        <div>
+            <label for="ahmed">username</label>
+            <input type="text"
+             required
+              placeholder="username" 
+              name="user" 
+              outofocus 
+              id="ahmed" />
+            <!-- required =>مطلوب
+            placeholder=> يظهر في الفراغ -->
+        </div>
+        <br />
+        <div>
+            <label for="pass">password</label>
+            <input type="password" 
+            required
+             placeholder="password"  
+            name="password"
+             maxlength="20" 
+             id="pass" />
+             <!--placeholder="password"
+                مطلوب
+                 يظهر في الحقل إذا كان فارغًا -->
+        </div>
+
+        <div>
+            <label>hidden</label>
+            <input type="hidden" value="Ahmed" />
+            <!--لا تظهر-->
+        </div>
+        <br />
+        <div>
+            <label>subjust</label>
+            <input type="text" placeholder="subjust" name="sub" />
+        </div>
+
+        <br />
+        <div>
+            <label>email</label>
+            <input type="email" required placeholder="your email" name="mail" />
+
+        </div>
+        <br />
+        <div>
+            <label>
+                color
+            </label>
+            <input type="color" value="color" />
+        </div>
+        <div>
+            <label>num</label>
+            <input type="number" min="0" max="100" step="1" />
+        </div>
+        <div>
+            <input type="radio" id="win" name="os" value="windons" checked />
+            <label for="win">windons</label>
+        </div>
+        <div>
+            <input type="radio" id="lin" name="os" value="linux" />
+            <label for="lin">linux</label>
+        </div>
+        <div>
+            <input type="radio" id="mac" name="os" value="mac" />
+            <label for="mac">Mac</label>
+        </div>
+        <hr/>
+        <div>
+            <input type="checkbox" name="os" value="c++" id="c" />
+            <label for="c">c++</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" value="html" id="h" />
+            <label for="h">html</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os" value="jave" id="j" />
+            <label for="j">jave</label>
+
+        </div>
+        <div>
+            <input type="checkbox" name="os" value="css" id="s" />
+            <label for="s">CSS</label>
+        </div>
+        <hr/>
+        <div>
+            <label for="book">book</label>
+            <select name="book" id="book" multiple>
+                <optgroup label="type book">
+                    <option value="1">book1</option>
+                    <option value="2">book2</option select>
+                    <option value="3">book3</option>
+                </optgroup>
+                <optgroup label="type book2">
+                    <option value="4">book4</option>
+                    <option value="5">book5</option>
+                    <option value="6">book6</option>
+                </optgroup>
+            </select>
+        </div>
+        <hr/>
+        <div>
+            <label >search</label>
+            <input type="search"/>
+        </div>
+        <hr/>
+        <div>
+            <label >url</label>
+            <input type="url"/>
+        </div>
+        <hr/>
+        <div>
+            <label >date</label>
+            <input type="date"/>
+        </div>
+        <hr/>
+        <div>
+            <label >time</label>
+            <input type="time" />
+
+        </div>
+        <hr/>
+        <div>
+            <label >file</label>
+            <input type="file"/>
+        </div>
+        <hr/>
+        <div>
+            <input list="programming" name="prg" aria-label="high" >
+            <datalist id="programming">
+                <option value="c++">c++</option>
+                <option value="c#">c#</option>
+                <option value="j">jave</option>
+                <option value="p">python</option>
+                <option value="html"></html></option>
+                <option value="css">CSS</option>
+                <option value="PHP">PHP</option>
+            </datalist>
+        </div>
+        <br />
+
+        <input type="reset" value="Reset" />
+        <input type="submit" value="save" />
+    </form>
+</body>
+
+</html>
