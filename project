@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>متجري الإلكتروني</title>
+    <meta name="description" content="تسوق جميع المنتجات المتوفرة داخل مصر بأسعار مميزة.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        img {
+            max-width: 250px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d9534f; 
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>كل ما تحتاجه في مكان واحد!</h1>
+    <img src="https://rqeeqa.com/wp-content/uploads/2020/03/2020-03-16-21.00.42-1570x2048.jpg" alt="منتج معروض للبيع">
+    <p>السعر: 70 جنيه مصري</p>
+</body>
+</html>
